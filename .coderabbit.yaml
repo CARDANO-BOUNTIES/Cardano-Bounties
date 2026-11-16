@@ -1,0 +1,53 @@
+
+language: en-US
+
+reviews:
+  profile: assertive
+  request_changes_workflow: false
+  high_level_summary: true
+  review_status: true
+  commit_status: true
+
+  path_instructions:
+    - path: "**/*"
+      instructions: |
+        Perform a thorough security-focused review.
+        Prioritize correctness, security, authorization,
+        data integrity and business logic.
+
+        Check authentication, wallet connection,
+        session management and access control.
+
+        Inspect backend API routes for authorization,
+        input validation, rate limiting and insecure
+        data exposure.
+
+        Examine Supabase queries, database permissions,
+        Row Level Security policies and potential
+        unauthorized access.
+
+        Review bounty creation, editing, deletion,
+        submissions, validation and ownership checks.
+
+        Inspect payment processing, payout tracking,
+        refunds and dispute handling for financial
+        integrity and authorization vulnerabilities.
+
+        Check admin operations for privilege escalation.
+
+        Identify exposed secrets, insecure environment
+        configuration and vulnerable dependencies.
+
+        For every finding, explain severity, affected
+        code, exploitation scenario, impact and a
+        concrete remediation.
+
+        Do not invent vulnerabilities. Distinguish
+        confirmed issues from potential risks.
+        Prioritize exploitable security issues over
+        cosmetic suggestions.
+
+auto_review:
+  enabled: true
+  drafts: false
+  auto_incremental_review: true
