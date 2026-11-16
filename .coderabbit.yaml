@@ -47,7 +47,7 @@ reviews:
         Prioritize exploitable security issues over
         cosmetic suggestions.
 
-auto_review:
-  enabled: true
-  drafts: false
-  auto_incremental_review: true
+  auto_review:
+    enabled: true
+    drafts: false
+    auto_incremental_review: true
